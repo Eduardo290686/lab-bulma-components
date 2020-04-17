@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import Button from "../button/Button";
 import 'bulma/css/bulma.css';
 
 class Navbar extends Component {
@@ -21,62 +22,39 @@ class Navbar extends Component {
           <div className="navbar-start">
             <a className="navbar-item" href="https://bulma.io/">
               Home
-      </a>
+            </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link" href="https://bulma.io/documentation/overview/start/">
                 Docs
-        </a>
+              </a>
               <div className="navbar-dropdown is-boxed">
                 <a className="navbar-item" href="https://bulma.io/documentation/overview/start/">
                   Overview
-          </a>
+                </a>
                 <a className="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
                   Modifiers
-          </a>
+                </a>
                 <a className="navbar-item" href="https://bulma.io/documentation/columns/basics/">
                   Columns
-          </a>
+                </a>
                 <a className="navbar-item" href="https://bulma.io/documentation/layout/container/">
                   Layout
-          </a>
+                </a>
                 <a className="navbar-item" href="https://bulma.io/documentation/form/general/">
                   Form
-          </a>
+                </a>
 
                 <a className="navbar-item" href="https://bulma.io/documentation/elements/box/">
                   Elements
-          </a>
+                </a>
                 <a className="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
                   Components
-          </a>
+                </a>
               </div>
             </div>
           </div>
-
-          <div className="navbar-end">
-            <div className="navbar-item">
-              <div className="field is-grouped">
-                <p className="control">
-                  <a className="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
-                    <span className="icon">
-                      <i className="fab fa-twitter"></i>
-                    </span>
-                    <span>
-                      Tweet
-              </span>
-                  </a>
-                </p>
-                <p className="control">
-                  <a className="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.2/bulma-0.8.2.zip">
-                    <span className="icon">
-                      <i className="fas fa-download"></i>
-                    </span>
-                    <span>Download</span>
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
+            <Button buttonClass="button is-danger is-rounded" buttonText="Log in"></Button>
+            <Button buttonClass="button is-success right-button" buttonText="Sign up"></Button>
         </div>
       </nav>
     );

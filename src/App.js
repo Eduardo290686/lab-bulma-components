@@ -1,12 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
-import 'bulma/css/bulma.css';
 import Navbar from "./navbar/Navbar";
+import Formfield from "./formfield/Formfield";
+import Button from "./button/Button";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <Navbar></Navbar>
+      <React.Fragment>
+        <Navbar></Navbar>
+        <Formfield firstLabel="Name" secondLabel="Password"></Formfield>
+      </React.Fragment>
     );
   }
 };
